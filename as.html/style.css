@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(4, 29, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-width: 1000px;
+    min-height: 1000px;
+    background: rgba(186, 238, 189, 0.973);
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.2);
+}
+
+.container .left{
+    position: relative ;
+    background: rgb(3, 223, 223);
+    padding: 40px;
+}
+.container :right{
+    position: relative ;
+    background: rgb(9, 172, 136);
+    padding: 40px;
+}
+.profiletext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1ps solid rgba(255,255,255,0.2);
+}
+.profiletext.profilimg{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profiletext.profilimg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profiletext h2{
+    color: rgba(25, 3, 78, 0.986);
+    font-size: 1.5em;
+    margin-top: 25px;
+    text-transform: uppercase;
+    text-align:center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+.profiletext h2 span{
+    font-size: 0.7em;
+    font-weight: 300;
+}
+.info{
+    padding: 40px;
+}
+.title{
+    color: rgba(0, 0, 0, 0.986);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.4ch;
+    margin-bottom: 20px;
+}
+.icon ul{
+    position: relative;
+}
+.info ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: rgb(4, 116, 4);
+}
+.info ul li .text{
+    font-weight: 700;
+    font-style: oblique;
+}
+.info.education li{
+    box-sizing: border-box;
+    margin: 10px;
+}
+.info.education h5{
+    color:rgb(21, 95, 5);
+    font-weight: 500;
+    font-size: 20px;
+    font-style:inherit;
+}
+.info.education h4:nth-child(2){
+      color: rgb(0, 0, 0);
+      font-weight: 500;
+}
+.info.education h4{
+
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+.info.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: ivory;
+    display: block;
+    margin-top: 5px;
+}
+.info.language .percent div{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(13, 226, 5);
+}
+.right.about p{
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:nth-child{
+    margin-bottom: 0px;
+}
+.title2{
+    text-transform: uppercase;
+    color: rgb(21, 4, 255);
+    margin-bottom: 10px;
+}
+p{
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.about.box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.skills.box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+div.box h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+    font-style: serif;
+    margin-top: 30px;
+}
+.percent {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background-color: rgb(215, 250, 239);
+}
+.percent div{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(255, 0, 221);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.about .hobbies{
+    margin: 10px;
+    padding: 10px;
+}
+.about .hobbies h3{
+     margin-left: 45%;
+     position: relative;
+     text-transform: uppercase;
+}
+.about .hobbies ul li{
+    margin: 10px;
+    list-style: none;
+    letter-spacing: 5px;
+    font-style: oblique;
+    font-size: 1pc;
+}
+.about .hobbies ul  .fa-solid{
+    color: rgb(79, 3, 114);
+}
+.achievements {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+}
+.achievements h3{
+    text-transform: uppercase;
+    position: relative;
+    left: 38%;
+}
+@media(max-width:1000px){
+    .container{
+        left: 600px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
